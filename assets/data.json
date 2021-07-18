@@ -1,0 +1,62 @@
+{
+  "akanksha" : {
+    "friends" : [
+      {
+        "akshita": [
+          {
+            "message": "Hello",
+            "sender": "akanksha"
+          },
+          {
+            "message": "Hi",
+            "sender": "akshita"
+          }
+        ]
+      },
+      {
+        "siddharth": [
+          {
+            "message": "How are you?",
+            "sender": "siddharth"
+          },
+          {
+            "message": "I am good",
+            "sender": "akanksha"
+          }
+        ]
+      }
+    ]
+  },
+  "akshita" : {
+    "friends" : [
+      {
+        "akanksha" :  [
+          {
+            "message" : "Hello",
+            "sender" :  "akanksha"
+          },
+          {
+            "message" :  "Hi",
+            "sender": "akshita"
+          }
+        ]
+      }
+    ]
+  },
+  "siddharth" : {
+    "friends" :  [
+      {
+        "akanksha" :  [
+          {
+            "message" : "How are you",
+            "sender" :  "siddharth"
+          },
+          {
+            "message": "I am good",
+            "sender":  "akanksha"
+          }
+        ]
+      }
+    ]
+  }
+}
