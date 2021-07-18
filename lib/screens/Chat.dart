@@ -48,10 +48,6 @@ class _ChatScreenState extends State<ChatScreen> {
       setState(() {
         print("sender: ${m['sender']}");
         print("meesg: ${m['message']}");
-//        var chatModel = Message();
-//        chatModel.sender = m['sender'];
-//        chatModel.message = m['message'];
-//        chatInfo.add(chatModel);
       var model = {"message" : m['message'], "sender" : m['sender']};
       chatInfo.add(model);
       });
@@ -61,42 +57,8 @@ class _ChatScreenState extends State<ChatScreen> {
     });
   }
 
-//  Future<String> get _localPath async {
-//    final directory = await getApplicationDocumentsDirectory();
-//
-//    return directory.path;
-//  }
-//  Future<File> get _localFile async {
-//    final path = await _localPath;
-//    return File('$path/messages.txt');
-//  }
-//  Future<String> readFile() async {
-//    try {
-//      final file = await _localFile;
-//      final contents = await file.readAsString();
-//      setState(() {
-//        chatInfo.add(contents);
-//      });
-//
-//      print("Contents: $contents");
-//      print("Chat: $chatInfo");
-//      return contents;
-//    } catch (e) {
-//      return "";
-//    }
-//  }
-//  Future<File> writeFile(String message, String sender) async {
-//    final file = await _localFile;
-//    String text = '{"message" : $message, "sender" : $sender}';
-//    return file.writeAsString(text);
-//  }
-
   sendMessage() async{
     if(messageController.text.trim().isNotEmpty ){
-      print('hello send');
-//      writeFile(messageController.text.trim(), user);
-//      var t = readFile();
-//      print("Cont: $t");
       var m = {"message" : messageController.text.trim(), "sender" : user};
       var tempObject = Message();
       tempObject.sender = user;
@@ -129,12 +91,6 @@ class _ChatScreenState extends State<ChatScreen> {
     // TODO: implement initState
     super.initState();
     getMessages();
-//    getExternalStorageDirectory().then((Directory directory) {
-//      dir = directory;
-//      jsonFile = new File(dir.path + "/" + fileName);
-//      fileExists = jsonFile.existsSync();
-//      if (fileExists) this.setState(() => fileContent = JSON.decode(jsonFile.readAsStringSync()));
-//    });
   }
 
   @override
