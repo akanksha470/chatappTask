@@ -67,7 +67,7 @@ class _MessagesState extends State<Messages> {
       isLoading = false;
     });
   }
-  //List<dynamic> response = loadAsset() as List;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -79,7 +79,6 @@ class _MessagesState extends State<Messages> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     // backgroundColor: Color(0xFF071A3F),
       appBar: AppBar(
         title: Center(child: Text('Messages')),
       ),
